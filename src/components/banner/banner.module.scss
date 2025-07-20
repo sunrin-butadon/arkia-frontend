@@ -1,0 +1,85 @@
+.banner {
+  display: flex;
+  width: 100%;
+  height: 480px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: url('banner.png') no-repeat;
+  background-size: cover;
+
+  .content_wrapper {
+    display: flex;
+    width: 1000px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+
+    .title_container {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 6px;
+
+      .title {
+        color: #FFF;
+        font-family: Pretendard;
+        font-size: 48px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 160%; /* 76.8px */
+        letter-spacing: -0.48px;
+      }
+    }
+
+    .button_group {
+      display: flex;
+      width: 374px;
+      align-items: center;
+      gap: var(--08, 8px);
+
+      .lets_go_making_rag_button {
+        display: flex;
+        padding: var(--10, 10px) var(--24, 16px);
+        justify-content: center;
+        align-items: center;
+        gap: var(--06, 6px);
+        border-radius: var(--06, 6px);
+        background: var(--Brand-Normal, #FF477E);
+        text-decoration: none;
+
+        // Button Text
+        color: var(--Static-White, #FFF);
+        /* medium */
+        font-family: Pretendard;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 20px; /* 125% */
+        letter-spacing: -0.064px;
+      }
+      
+      .lets_go_using_rag_button {
+        display: flex;
+        padding: var(--10, 10px) var(--16, 16px);
+        justify-content: center;
+        align-items: center;
+        gap: var(--06, 6px);
+        border-radius: var(--06, 6px);
+        background: rgba(255, 71, 126, 0.18);
+        
+        // Button Text
+        text-decoration: none;
+        color: var(--Brand-Normal, #FF477E);
+        /* medium */
+        font-family: Pretendard;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 20px; /* 125% */
+        letter-spacing: -0.064px;
+      }
+    }
+  }
+
+}

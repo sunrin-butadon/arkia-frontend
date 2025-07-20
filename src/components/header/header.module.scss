@@ -1,0 +1,103 @@
+.header {
+  display: flex;
+  width: 100%;
+
+  padding: 14px 60px;
+  justify-content: center;
+  border-bottom: 1px solid var(--Line-Border, rgba(10, 10, 10, 0.12));
+  background: var(
+    --Component-Material-Background-Strong,
+    rgba(255, 255, 255, 0.84)
+  );
+}
+
+.wrapper {
+  max-width: 1440px;
+  width: 100%;
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+}
+
+
+.search_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 14px;
+
+  .input_container {
+    display: flex;
+    width: 360px;
+    height: 44px;
+    padding: var(--10, 10px) var(--16, 16px);
+    align-items: center;
+    gap: var(--08, 8px);
+    border-radius: var(--08, 8px);
+    background: var(--Component-Fill-Alternative, rgba(10, 10, 10, 0.02));
+
+    input {
+      flex: 1 0 0;
+      font-family: Pretendard;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 20px; /* 125% */
+      letter-spacing: -0.064px;
+      color: var(--Label-Strong, #0a0a0a);
+      background-color: transparent;
+      border: none;
+      outline: none;
+      ::placeholder {
+        color: var(--Label-Alternative, #858585);
+      }
+    }
+  }
+}
+
+.user_container {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+
+  .login_button {
+    display: flex;
+    padding: var(--00, 0px);
+    justify-content: center;
+    align-items: center;
+    color: var(--Label-Normal, #1A1A1A);
+
+    /* medium */
+    font-family: Pretendard;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px; /* 125% */
+    letter-spacing: -0.064px;
+
+    text-decoration: none;
+    
+  }
+
+  .signup_button {
+    display: flex;
+    padding: var(--08, 8px) var(--16, 16px);
+    justify-content: center;
+    align-items: center;
+    gap: var(--04, 4px);
+    border-radius: var(--06, 6px);
+    background: var(--Component-Fill-Normal, rgba(10, 10, 10, 0.07));
+
+    color: var(--Label-Normal, #1A1A1A);
+
+    /* medium */
+    font-family: Pretendard;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px; /* 125% */
+    letter-spacing: -0.064px;
+
+    text-decoration: none;
+  }
+}
