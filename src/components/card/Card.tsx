@@ -16,7 +16,7 @@ export default function Card({
 }: CardProps) {
   return (
     <div className={styles.card} >
-      <img className={styles.thumbnail} src="https://picsum.photos/260/140" />
+      <a style={{width:260}} href=''><img className={styles.thumbnail} src="card_thumb.jpg" /></a>
       <div className={styles.article}>
 
         <a className={styles.content} href="">
