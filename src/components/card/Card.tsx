@@ -1,5 +1,9 @@
+
+import UseerBadge from '../user/UserBadge';
+
 import Group from '../../assets/icon/Group.svg';
 import styles from './card.module.scss';
+
 
 interface CardProps {
   title: string;
@@ -27,12 +31,12 @@ export default function Card({
         </a>
 
         <div className={styles.metadata_container}>
-          <div className={styles.user_conitainer}>
-            <img className={styles.profile_image} src="card_thumb.jpg" />
-            <span className={styles.username}>{username}</span>
-          </div>
+
+          <UseerBadge username={username} />
+
+          
           <div className={styles.now_using_container}>
-            <Group />
+            <Group style={{color:"#949494"}} />
             <span className={styles.now_using}>1,000+</span>
           </div>
 

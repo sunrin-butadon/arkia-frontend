@@ -19,7 +19,7 @@ export default function Home() {
 	});
 
   return (
-    <div className={styles.container}>
+    <div className={styles.home}>
       <Header />
 			<Banner />
 			<CardSection title='인기 데이터세트' data={datasetsListData}/>
